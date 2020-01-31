@@ -1,13 +1,14 @@
 import React from "react";
 
-const schedule = {
-  title: "Hi, Team C"
-};
+import "rbx/index.css";
+import { Container } from "rbx";
+
+import ProjectCard from './components/ProjectCard/ProjectCard';
 
 const App = () => (
-  <div>
-    <h1>{schedule.title}</h1>
-  </div>
+  <Container>
+    <ProjectCard />
+  </Container>
 );
 
 export default App;
