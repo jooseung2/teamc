@@ -1,24 +1,31 @@
 {
   "companies": {
     "923845891237512": {
-      "name": "Apple"
+      "name": "Apple",
+      "img": "apple.jpg"
     },
     "102321321482818": {
-      "name": "Amazon"
+      "name": "Amazon",
+      "img" : "amazon.png"
     },
-    "012038123712370": {
-      "name": "Netflix"
+    "912038123712370": {
+      "name": "Facebook"
+    },
+    "232342439281719": {
+      "name": "Google",
+      "img" : "google.png"
     }
   },
   "opportunities": {
-    "avjkhkefrej": {
+
+    "asdfadsfdaf": {
       "company": 923845891237512,
-      "projectName": "Jailbreak your iPhone",
-      "projectDescription": "Bypass Apple's encryption and customize your iPhone however your want it!",
-      "projectDuration": 50,
-      "difficulty": 5,
-      "requiredSkills": ["C++"],
-      "developedSkills": [],
+      "projectName": "Data challenge - Digital Market",
+      "projectDescription": "Explore your potential in product optimizing!",
+      "difficulty": "easy",
+      "projectDuration": "2 months",
+      "requiredSkills": ["Excel"],
+      "developedSkills": ["Tableau", "SQL"],
       "rewards": ["Interview"],
       "currentParticipants": 88,
       "maxParticipants": 100,
@@ -26,19 +33,49 @@
       "ratingNumber": 10,
       "registrationDeadline": "2020-02-01"
     },
-    "asdfadsfdaf": {
-      "company": 923845891237512,
-      "projectName": "Data challenge - Digital Market",
-      "projectDescription": "Explore your potential in product optimizing!",
+    "ijnuhbygvtf": {
+      "company": 232342439281719,
+      "projectName": "Data Analysis Bootcamp - Tech Direction",
+      "projectDescription": "Boost your level of data processing.",
+      "difficulty": "intermediate",
+      "projectDuration": "6 months",
+      "requiredSkills": ["R", "VBA"],
+      "developedSkills": ["Python", "Hadoop"],
+      "rewards": [],
+      "currentParticipants": 4,
+      "maxParticipants": 12,
+      "ratingSum": 37,
+      "ratingNumber": 8,
+      "registrationDeadline": "2020-02-01"
+    },
+    "tgbyhnujmed": {
+      "company": 102321321482818,
+      "projectName": "Data Insight Discovery - Business Supporting",
+      "projectDescription": "Start your application of data into real world.",
       "difficulty": "easy",
-      "projectDuration": 8,
-      "requiredSkills": ["Excel"],
-      "developedSkills": [],
+      "projectDuration": "2 months",
+      "requiredSkills": ["Excel", "SQL"],
+      "developedSkills": ["Python", "VBA"],
       "rewards": ["Interview"],
       "currentParticipants": 88,
       "maxParticipants": 100,
-      "ratingSum": 49,
-      "ratingNumber": 10,
+      "ratingSum": 53,
+      "ratingNumber": 15,
+      "registrationDeadline": "2020-02-01"
+    },
+    "ujnqazwsxos": {
+      "company": 912038123712370,
+      "projectName": "Data Recognizer through Capital - Finance",
+      "projectDescription": "Making models to gain profit.",
+      "difficulty": "expert",
+      "projectDuration": "3 months",
+      "requiredSkills": ["Tableau", "Python"],
+      "developedSkills": ["SQL", "Hadoop"],
+      "rewards": [],
+      "currentParticipants": 50,
+      "maxParticipants": 150,
+      "ratingSum": 400,
+      "ratingNumber": 91,
       "registrationDeadline": "2020-02-01"
     }
   },
