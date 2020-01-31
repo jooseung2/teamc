@@ -4,7 +4,11 @@ import "rbx/index.css";
 import { Box, Media, Image, Content, Level, Button, Icon, FontAwesomeIcon } from "rbx";
 import StarRatings from 'react-star-ratings';
 
-const ProjectCard = ({ project }) => {
+const renderRewards = (rewards) => {
+    return "haha";
+}
+
+const ProjectCard = ({ project, companies }) => {
     return (
         <Box>
             <Media>
@@ -12,11 +16,12 @@ const ProjectCard = ({ project }) => {
                     <Image.Container size={128}>
                         <Image
                             // alt="Image"
-                            src="data/google-logo.jpg"
+                            src={`data/${companies[project["company"]]["img"]}`}
                         />
                     </Image.Container>
                     <StarRatings
-                        rating={4.5}
+        
+                        rating={project["ratingSum"] / project["ratingNumber"]}
                         starRatedColor="yellow"
                         starDimension="20px"
                         starSpacing="3px"
@@ -29,12 +34,14 @@ const ProjectCard = ({ project }) => {
                 <Media.Item>
                     <Content>
                         <p>
-                            <strong>Deepfake Detection Challenge</strong> <small>Google</small> <br />
-                            Identify videos with facial or voice manipulations <br />
-                            Duration <br />
-                            Rating <br />
-                            difficulty level <br />
-                            Reward <br />
+                            <strong>{project["projectName"]}</strong> <small>
+                                
+                            {companies[project["company"]]["name"]}
+                            </small> <br />
+                            {project["projectDescription"]} <br />
+                            {project["projectDuration"]} <br />
+                            {project["difficulty"]} <br />
+                            {project["rewards"]} <br />
                             <Button>Explore project</Button>
                         </p>
                     </Content>
