@@ -12,9 +12,9 @@ const App = () => {
   const [dataLoaded, setLoaded] = useState(false);
   const database = Object.values(data);
 
-  useEffect (() => {
+  useEffect(() => {
     const fetchProjects = async () => {
-      const response = await fetch ('./data/data.json');
+      const response = await fetch('./data/data.json');
       const json = await response.json();
       setData(json);
       setLoaded(true);
@@ -24,12 +24,13 @@ const App = () => {
 
   return dataLoaded ?
     (
-    <Container>
-      <ProjectCardList 
-        database = {database}
-      />
-    </Container>)
-  : (<p>loading hehehe</p>);
+      <Container>
+        <Nav />
+        <ProjectCardList
+          database={database}
+        />
+      </Container>)
+    : (<p>loading hehehe</p>);
 };
 
 export default App;
